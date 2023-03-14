@@ -1,0 +1,454 @@
+/* ================================
+        ALL COMMONE CSS PART START
+==================================== */
+:root {
+    --ff1: 'Poppins', sans-serif;
+    --ff2: 'Kaushan Script', cursive;
+    --ff3: 'Inter', sans-serif;
+    --ff4: 'Jura', sans-serif;
+    --primary_colour: #FFFFFF;
+    --hover: #173157;
+    --red: #ff0000;
+    --paragrap: #E4E4E4;
+}
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.clr {
+    clear: both;
+}
+ol,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+.img-fluid {
+    min-width: 60px;
+    height: auto;
+}
+.w-100 {
+    width: 100%;
+}
+.container {
+    /* background: blue; */
+    padding: 0;
+}
+body{
+    background: #162741;
+}
+/* ================================
+        ALL COMMONE CSS PART END
+==================================== */
+
+/* ================================
+        NAVBAR PART START
+==================================== */
+nav{
+    position: relative;
+    z-index: 999;
+    margin: 0 auto;
+}
+nav .container{
+    position: absolute;
+    top: 35px;
+    left: 106px;
+    z-index: 999;
+    background: transparent;
+}
+nav .main_nav ul li {
+    margin-left: 45px;
+}
+nav .main_nav ul li a {
+    font-family: var(--ff1);
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: var(--primary_colour);
+}
+nav .main_nav ul li a:hover{
+    color: #fff;
+}
+/* ================================
+        NAVBAR PART END
+==================================== */
+
+/* ================================
+        BANNER PART START
+==================================== */
+#banner .banner_main {
+    background: url(../image/Banner\ BG.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#banner .banner_main .overlay { 
+    background: linear-gradient(82.06deg, rgba(1, 1, 1, 0.62) 46.14%, rgba(31, 169, 180, 0) 101.22%);
+    box-shadow: inset 0px 115px 83px rgba(0, 0, 0, 0.7);
+    padding: 187px 0 0px;
+    z-index: 100;
+    /* background: black; */
+    /* background: rgba(255, 0, 0, 0.9); */
+    
+}
+#banner .banner_main .overlay  .container .raw{
+    display: flex;
+    padding-left: 05px;
+}
+#banner .banner_main .overlay  .container .raw .text_2{
+    font-family:var(--ff1);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 112%;
+    letter-spacing: 0.15em;
+    color: #D9D9D9;
+    margin-top: 500px;
+}
+#banner .banner_main .overlay  .container .raw .item h1{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 112%;
+    text-align: center;
+    color: var(--primary_colour);
+    width: 492px;
+    height: 166px;
+    margin-bottom: 20px;
+}
+#banner .banner_main .overlay  .container .raw .item h4{
+    font-family: var(--ff3);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 112%;
+    color: var(--primary_colour);
+    margin-bottom: 15px;
+    padding: 0;
+}
+#banner .banner_main .overlay  .container .raw .item p{
+    font-family: var(--ff3);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: var(--primary_colour);
+    margin-bottom: 35px;
+}
+/* BUTTON PART START */
+#banner .banner_main .overlay  .container .raw .item .btn_main{
+    display: flex;
+    gap: 14px;
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn{
+    width: 162px;
+    height: 66px;
+    background: #244B49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 13px 20px;
+    transition: all linear 0.5s;
+
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn:nth-child(1) {
+    width: 162px;
+    height: 66px;
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn:nth-child(2) {
+    width: 250px;
+    height: 66px;
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn i{
+    color: var(--primary_colour);
+    margin-right: 15px;
+    font-size: 30px;
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn a{
+    font-family: var(--ff3);
+    font-weight: 600;
+    font-size: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn:hover {
+    background: var(--primary_colour);
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn:hover i {
+    color: var(--hover);
+}
+#banner .banner_main .overlay  .container .raw .item .btn_main .btn:hover a{
+    color: var(--hover);
+}
+/* BUTTON PART END */
+
+/* SLIDER PART START */
+
+#slider .slider_main {
+    display: flex;
+    gap: 200px;
+}
+#slider .slider_main .s_image{
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    gap: 150px;
+    margin-left: 100px;
+}
+#slider .s_image .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    align-items: center;
+    opacity: 1;
+    background: rgba(22, 39, 65, 0.78);
+}
+.slick-center .overlay{
+    opacity: 01;
+    transition: all linear 0.5s;
+    overflow: hidden;
+}
+.s_image .overlay .icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--primary_colour);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.slick-center .s_image .overlay .icon{
+    opacity: 1;
+    transition: all linear .5s;
+}
+.s_image .overlay .icon i{
+   color: var(--primary_colour);
+   font-size: 35px;
+   opacity: 0;
+}
+.slick-center .s_image .overlay .icon i{
+   opacity: 1;
+   transition: all linear 0.3s;
+}
+/*SLIDER PART END */
+
+/* ================================
+BANNER PART END
+==================================== */
+
+
+
+/* ================================
+FOCUS PART START
+==================================== */
+#focus{
+    padding: 122px 0px;
+}
+#focus .container .row{
+    display: flex;
+}
+#focus .container .row .col-lg-6 .text_item h2{
+    font-family: var(--ff3);
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 112%;
+    letter-spacing: 0.15em;
+    color: var(--primary_colour);
+
+}
+#focus .container .row .col-lg-6 .text_item p{
+    font-family: var(--ff1);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: var(--primary_colour);
+    margin: 33px 0 36px 0;
+}
+#focus .container .row .col-lg-6 .text_item a{
+    width: 240px;
+    height: 65px;
+    padding: 13px 20px;
+    background: #244B49;
+    border-radius: 05px;
+    -webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    -ms-border-radius: 05px;
+    -o-border-radius: 05px;
+    font-family: var(--ff3);
+    font-size: 29px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--primary_colour);
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+#focus .container .row .col-lg-6 .text_item a:hover{
+    color: var(--hover);
+    background: var(--primary_colour);
+}
+#focus .container .row .col-lg-6 .image_item a img{
+    width: 645px;
+    height: 381px;
+}
+/* ================================
+        FOCUS PART END
+==================================== */
+
+
+/* ================================
+        FOOTER PART START
+==================================== */
+#footer{
+    background: #101C2E;
+}
+/* FOOTER HEADER START */
+#footer .container .header{
+    display: flex;
+    padding: 30px 0 45px;
+}
+#footer .container .header .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+#footer .container .header .icon a{
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 1px solid var(--primary_colour);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   transition: all linear 0.5s;
+   -webkit-transition: all linear 0.5s;
+   -moz-transition: all linear 0.5s;
+   -ms-transition: all linear 0.5s;
+   -o-transition: all linear 0.5s;
+}
+#footer .container .header .icon a i{
+   color: var(--primary_colour);
+   transition: all linear 0.5s;
+}
+#footer .container .header .icon a:hover {
+    border: 1px solid var(--red);
+}
+#footer .container .header .icon a:hover i{
+    color: var(--red);
+}
+/* #footer .container .header .icon:hover a svg{
+    color: red;
+} */
+/* FOOTER HEADER END */
+
+/* FOOTER ITEM PART START */
+footer .container .item .raw{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+footer .container .item .raw  .st_part{
+    display: flex;
+    gap: 20px;
+}
+footer .container .item .raw .st_part .image{
+    min-width: 220px;
+    margin-bottom: 35px;
+}
+footer .container .item .raw .st_part .text p{
+    font-family: var(--ff3);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--paragrap) ;
+}
+footer h4{
+    font-family:var(--ff3);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--primary_colour);
+    margin-bottom: 20px;
+}
+footer ul{
+    margin: 0;
+    padding: 00;
+    padding-right: 30px;
+}
+footer ul li{
+    font-family: var(--ff3);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: var(--paragrap);
+
+}
+/* FOOTER ITEM PART END */
+
+/* COPY PART START */
+#footer .copy{
+    background: #080F18;
+    padding: 25px 0 20px;
+}
+#footer .copy p{
+    font-family: var(--ff4);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary_colour);
+    text-align: center;
+}
+#footer .copy p span{
+    font-family: var(--ff4);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFAB34;
+    text-align: center;
+}
+/* COPY PART END */
+/* ================================
+        FOOTER PART END
+==================================== */
+
+/* ================================
+        NAVBAR PART START
+==================================== */
+/* ================================
+        NAVBAR PART END
+==================================== */
+
